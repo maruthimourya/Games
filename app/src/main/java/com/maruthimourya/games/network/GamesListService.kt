@@ -7,9 +7,11 @@ import retrofit2.http.Query
 
 interface GamesListService {
 
-
     @GET("games/")
-    fun getGames(@Query("api_key")apiKey : String, @Query("format")format : String, @Query("filter")  searchQuery : String   ): Call<ResponseData>
-
+    fun getGames(
+        @Query("api_key") apiKey: String,
+        @Query("format") format: String,
+        @Query("filter") searchQuery: String
+    ): Call<ResponseData>
 
 }

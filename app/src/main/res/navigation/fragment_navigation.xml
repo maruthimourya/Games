@@ -8,9 +8,25 @@
     <fragment
         android:id="@+id/gameResultsFragment"
         android:name="com.maruthimourya.games.view.GameResultsFragment"
-        android:label="fragment_game_results"
+        android:label="Game List"
         tools:layout="@layout/fragment_game_results">
+        <action
+            android:id="@+id/action_gameResultsFragment_to_gameDetailFragment"
+            app:destination="@id/gameDetailFragment"
+            app:enterAnim="@android:anim/slide_in_left"/>
+    </fragment>
 
+    <fragment
+        android:id="@+id/gameDetailFragment"
+        android:name="com.maruthimourya.games.view.GameDetailFragment"
+        android:label="Game Detail"
+        tools:layout="@layout/fragment_game_detail">
+        <argument
+            android:name="game_title"
+            app:argType="string" />
+        <argument
+            android:name="game_image"
+            app:argType="string" />
     </fragment>
 
 </navigation>

@@ -18,21 +18,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/next_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@color/white"
-                android:src="@drawable/ic_baseline_double_arrow_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <ImageView
                 android:id="@+id/game_image"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginTop="10dp"
@@ -48,13 +37,12 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="24dp"
                 android:fontFamily="@font/berkshire_swash"
-                android:textColor="@color/black"
                 android:textSize="20sp"
+                android:gravity="center"
                 app:layout_constraintStart_toEndOf="@+id/game_image"
-                app:layout_constraintEnd_toStartOf="@+id/next_button"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:text="Batman Begins" />
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
